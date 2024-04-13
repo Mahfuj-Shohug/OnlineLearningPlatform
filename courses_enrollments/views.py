@@ -44,5 +44,19 @@ def enroll_student(request):
 
 @api_view(["POST"])
 def validate_enrollment(request):
-    # Add validation logic here based on your requirements
-    return Response({"message": "Validation successful"}, status=status.HTTP_200_OK)
+    student_name = request.data.get("student_name", "")
+    course_id = request.data.get("course_id", None)
+
+    try:
+        course = Course.objects.get(pk=course_id)
+    except Course.DoesNotExist:
+        return Response(
+            {"error": "Course does not exist"}, status=status.HTTP_400_BAD_REQUEST
+        )
+
+    if not student_name:
+        return Response(
+            {"error": "Student name is required"}, status=status.HTTP_400_BAD_REQUEST
+        )
+
+    return Response({"message": "Enrollment is valid"}, status=status.HTTP_200_OK)
