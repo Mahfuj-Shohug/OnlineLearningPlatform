@@ -1,0 +1,133 @@
+[
+    {
+        "model": "courses_enrollments.course",
+        "pk": 1,
+        "fields": {
+            "title": "Course 1",
+            "description": "Description of Course 1",
+            "instructor": "Instructor 1",
+            "duration": 60,
+            "price": 100.00,
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.enrollment",
+        "pk": 1,
+        "fields": {
+            "student_name": "Mahfuj Hasan",
+            "course": 1,
+            "enrollment_date": "2024-04-13",
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.course",
+        "pk": 2,
+        "fields": {
+            "title": "Course 2",
+            "description": "Description of Course 2",
+            "instructor": "Instructor 2",
+            "duration": 90,
+            "price": 150.00,
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.enrollment",
+        "pk": 2,
+        "fields": {
+            "student_name": "Shohug",
+            "course": 2,
+            "enrollment_date": "2024-04-13",
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.course",
+        "pk": 3,
+        "fields": {
+            "title": "Course 3",
+            "description": "Description of Course 3",
+            "instructor": "Instructor 3",
+            "duration": 120,
+            "price": 200.00,
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.enrollment",
+        "pk": 3,
+        "fields": {
+            "student_name": "Monir Hossin",
+            "course": 3,
+            "enrollment_date": "2024-04-13",
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.course",
+        "pk": 4,
+        "fields": {
+            "title": "Course 4",
+            "description": "Description of Course 4",
+            "instructor": "Instructor 4",
+            "duration": 75,
+            "price": 120.00,
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.enrollment",
+        "pk": 4,
+        "fields": {
+            "student_name": "Saju",
+            "course": 3,
+            "enrollment_date": "2024-04-13",
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.course",
+        "pk": 5,
+        "fields": {
+            "title": "Course 5",
+            "description": "Description of Course 5",
+            "instructor": "Instructor 5",
+            "duration": 45,
+            "price": 80.00,
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.enrollment",
+        "pk": 5,
+        "fields": {
+            "student_name": "Omor Faruk",
+            "course": 5,
+            "enrollment_date": "2024-04-13",
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    },
+    {
+        "model": "courses_enrollments.enrollment",
+        "pk": 6,
+        "fields": {
+            "student_name": "Rayhanul Islam",
+            "course": 5,
+            "enrollment_date": "2024-04-13",
+            "created_at": "2024-04-13T00:00:00Z",
+            "updated_at": "2024-04-13T00:00:00Z"
+        }
+    }
+]
