@@ -1,15 +1,16 @@
-# Online Learning Platform
+# Task: Build a Backend System for an Online Learning Platform
 
-This is a Django-based online learning platform where users can enroll in courses, view course materials, and track their progress.
+This is a Python Django-based online learning platform test project where users can enroll in courses, view course materials, and track their progress.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your local machine:
+Before you begin, ensure you have the following installed on your local machine: # On Windows
 
 - Python
 - pip
 - XAMPP (or any other MySQL server)
   - Create a MySQL database named `olp_db`
+- Postman or any other API Platform/ or Postman VS extensions
 
 ## Installation
 
@@ -29,7 +30,7 @@ Before you begin, ensure you have the following installed on your local machine:
 
     ```bash
     python -m venv pyenv
-    pyenv\Scripts\activate  # On Windows
+    pyenv\Scripts\activate  
     ```
 
 4. Install dependencies:
@@ -64,10 +65,12 @@ Before you begin, ensure you have the following installed on your local machine:
     python manage.py runserver
     ```
 
-8. Open your web browser and navigate to http://localhost:8000 to access the application.
+8. Open your web browser and navigate to http://localhost:8000 to access the application where it will be define the all urls for this project.
 
-## Usage
+## Usage URL
 
-- Visit the homepage to view available courses and enroll in them.
-- Once enrolled, you can access course materials, track your progress, and interact with other learners.
-- Use the Django admin interface (http://localhost:8000/admin) to manage courses, enrollments, and other site content.
+- Visit the homepage: (http://localhost:8000) to view the all instraction and api url.
+- 
+
+
+## Some test case here with proper Screenshots
