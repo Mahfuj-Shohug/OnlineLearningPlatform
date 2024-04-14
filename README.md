@@ -201,6 +201,6 @@ Before you begin, ensure you have the following installed on your local machine:
 ## Developed By
 
 Md. Mahfuj Hasan Shohug  
-Software Engineer (OOP)  
+Software Engineer  
 Contact: shohug.mahfuj@gmail.com  
 Phone: 01786725669

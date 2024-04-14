@@ -5,7 +5,7 @@ services:
     image: mysql:latest
     restart: always
     environment:
-      MYSQL_DATABASE: 'olp_db'
+      MYSQL_DATABASE: 'OLP_db'
       MYSQL_USER: 'root'
       MYSQL_PASSWORD: ''
       MYSQL_ROOT_PASSWORD: ''
