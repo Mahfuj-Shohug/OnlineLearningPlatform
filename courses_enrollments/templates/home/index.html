@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-left: 3px solid #f36d33;
+            color: #666;
+            display: block;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        ul, ol {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task: Build a Backend System for an Online Learning Platform</h1>
+    <h2>Prerequisites</h2>
+    <p>Before you begin, ensure you have the following installed on your local machine: # On Windows</p>
+    <ul>
+        <li>Python</li>
+        <li>pip</li>
+        <li>XAMPP (or any other MySQL server)
+            <ul>
+                <li>Create a MySQL database named <code>olp_db</code></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <p>This is a Python Django-based online learning platform test project where users can enroll in courses, view course materials, and track their progress.</p>
+    <h2>Installation complete successfully</h2>
+
+ 
+
+    <h2>Test Usage URL</h2>
+    <p>Visit the homepage: <a href="http://localhost:8000">http://localhost:8000</a> to view the all instruction and API URL.</p>
+
+    <h2>URLs</h2>
+
+    <h3>Course API</h3>
+    <ul>
+        <li>Get all courses: (GET) <a href="http://localhost:8000/courses">http://localhost:8000/courses</a>  # Also can be filtered with title, instructor, price & duration</li>
+        <li>Get course by ID: (GET) <a href="http://localhost:8000/courses/<course_id>">http://localhost:8000/courses/&lt;course_id&gt;</a></li>
+        <li>Create a new course: (POST) <a href="http://localhost:8000/courses/create">http://localhost:8000/courses/create</a></li>
+    </ul>
+
+    <h3>Enrollment API</h3>
+    <ul>
+        <li>Enroll a student: (POST) <a href="http://localhost:8000/enrollments">http://localhost:8000/enrollments</a></li>
+        <li>Validate enrollment: (POST) <a href="http://localhost:8000/enrollments/validate">http://localhost:8000/enrollments/validate</a></li>
+    </ul>
+
+    <h2>Testing with Postman</h2>
+    <ol>
+        <li>Also have Postman collection file in the project root folder: <a href="">Online Learning Platform.postman_collection.json</a></li>
+        <li>Open Postman.</li>
+        <li>Click on the "Import" button in the top left corner.</li>
+        <li>Select the <code>Online Learning Platform.postman_collection.json</code> file.</li>
+        <li>Once imported, you will see the "Online Learning Platform" collection in your Postman workspace.</li>
+        <li>Click on the collection to expand it and view the available requests.</li>
+        <li>You can now test the API endpoints by sending requests using Postman.</li>
+    </ol>
+
+    <h2>Some Test Cases with Proper Screenshots in the project root folder. <br> The folder name is "screenshots"</h2>
+
+
+    <h2>Build and run the Docker containers: (Optional)</h2>
+    <p>Before that please stop the runserver from the cmd</p>
+    <ol>
+        <li>Start the docker container server: # Docker Desktop required with (Docker version 25.0.3)</li>
+        <code>docker-compose up --build</code>
+    </ol>
+
+    <h2>Developed By</h2>
+    <p>Md. Mahfuj Hasan Shohug</p>
+    <p>Software Engineer (OOP)</p>
+    <p>Contact: shohug.mahfuj@gmail.com</p>
+    <p>Phone: 01786725669</p>
+</body>
+</html>

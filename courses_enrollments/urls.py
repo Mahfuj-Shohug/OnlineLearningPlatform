@@ -3,6 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    # Home page
+    path("", views.home, name="home"),
     # Course API
     path("courses", views.get_courses, name="get_courses"),
     path("courses/<int:course_id>", views.get_course_by_id, name="get_course_by_id"),

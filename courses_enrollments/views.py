@@ -3,6 +3,11 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import Course, Enrollment
 from .serializers import CourseSerializer, EnrollmentSerializer
+from django.shortcuts import render
+
+
+def home(request):
+    return render(request, "home/index.html")
 
 
 # Course Service
