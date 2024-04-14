@@ -3,9 +3,25 @@ from .models import Course, Enrollment
 
 
 class CourseSerializer(serializers.ModelSerializer):
+    enrollment_count = serializers.SerializerMethodField()
+    enrolled_students = serializers.SerializerMethodField()
+
     class Meta:
         model = Course
         fields = "__all__"
+
+    def get_enrollment_count(self, obj):
+        return Enrollment.objects.filter(course=obj).count()
+
+    def get_enrolled_students(self, obj):
+        enrolled_students = Enrollment.objects.filter(course=obj)
+        return [
+            {
+                "student_name": enrollment.student_name,
+                "enrollment_date": enrollment.enrollment_date,
+            }
+            for enrollment in enrolled_students
+        ]
 
 
 class DateOnlyField(serializers.Field):
