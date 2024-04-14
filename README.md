@@ -130,9 +130,42 @@ Before you begin, ensure you have the following installed on your local machine:
 
 - Send a GET request to the `/courses/5` endpoint.
 
-![Get Filter Courses](./screenshots/get_course_by_id.png)
+![Get get_course_by_id](./screenshots/get_course_by_id.png)
 
 - Send a GET request to the `/courses/500` endpoint. # Invalid id
 
-![Get Filter Courses](./screenshots/get_course_by_id2.png)
+![Get get_course_by_id](./screenshots/get_course_by_id2.png)
 
+
+### Testing the `create_course` (POST Method)
+
+- Send a POST request to the `/courses/create` endpoint. # custom fields validation 
+
+![POST create_course](./screenshots/create_course.png)
+
+- Send a POST request to the `/courses/create` endpoint. # created successfully
+
+![POST create_course](./screenshots/create_course2.png)
+
+- Send a POST request to the `/courses/create` endpoint. # Already have with same name
+
+![POST create_course](./screenshots/create_course3.png)
+
+
+### Testing the `enroll_student` (POST Method)
+
+- Send a POST request to the `/enrollments` endpoint. # custom fields validation 
+
+![POST enroll_student](./screenshots/enroll_student.png)
+
+- Send a POST request to the `/enrollments` endpoint. # Enrolled successfully
+
+![POST enroll_student](./screenshots/enroll_student2.png)
+
+- Send a POST request to the `/enrollments` endpoint. # Already Enrolled
+
+![POST enroll_student](./screenshots/enroll_student3.png)
+
+- Send a POST request to the `/enrollments` endpoint. # Invalid course Id
+
+![POST enroll_student](./screenshots/enroll_student4.png)
