@@ -8,8 +8,24 @@ from .serializers import CourseSerializer, EnrollmentSerializer
 # Course Service
 @api_view(["GET"])
 def get_courses(request):
-    courses = Course.objects.all()
-    serializer = CourseSerializer(courses, many=True)
+    instructor = request.query_params.get("instructor")
+    price = request.query_params.get("price")
+    duration = request.query_params.get("duration")
+    title = request.query_params.get("title")
+
+    queryset = Course.objects.all()
+
+    if instructor:
+        queryset = queryset.filter(instructor__icontains=instructor)
+    if price:
+        queryset = queryset.filter(price=price)
+    if duration:
+        queryset = queryset.filter(duration=duration)
+    if title:
+        queryset = queryset.filter(title__icontains=title)
+
+    serializer = CourseSerializer(queryset, many=True)
+
     return Response(serializer.data)
 
 
