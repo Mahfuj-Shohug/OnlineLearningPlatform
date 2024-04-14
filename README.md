@@ -130,11 +130,11 @@ Before you begin, ensure you have the following installed on your local machine:
 
 - Send a GET request to the `/courses/5` endpoint.
 
-![Get get_course_by_id](./screenshots/get_course_by_id.png)
+![Get get_course_by_id](./screenshots/get_courses_by_id.png)
 
 - Send a GET request to the `/courses/500` endpoint. # Invalid id
 
-![Get get_course_by_id](./screenshots/get_course_by_id2.png)
+![Get get_course_by_id](./screenshots/get_courses_by_id2.png)
 
 
 ### Testing the `create_course` (POST Method)
