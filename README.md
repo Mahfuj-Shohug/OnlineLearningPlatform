@@ -69,8 +69,37 @@ Before you begin, ensure you have the following installed on your local machine:
 
 ## Usage URL
 
-- Visit the homepage: (http://localhost:8000) to view the all instraction and api url.
-- 
+- Visit the homepage: (http://localhost:8000) to view the all instruction and API URL.
+
+## URLs
+
+### Course API
+- Get all courses: (GET) (http://localhost:8000/courses)  # Also can be filtered with title, instructor, price & duration
+- Get course by ID: (GET) (http://localhost:8000/courses/<course_id>)
+- Create a new course: (POST) (http://localhost:8000/courses/create)
+
+### Enrollment API
+- Enroll a student: (POST) (http://localhost:8000/enrollments)
+- Validate enrollment: (POST) (http://localhost:8000/enrollments/validate)
+
+### Testing with Postman
+
+1. Also have Postman collection file in the project root folder: [Online Learning Platform.postman_collection.json]
+2. Open Postman.
+3. Click on the "Import" button in the top left corner.
+4. Select the [Online Learning Platform.postman_collection.json] file.
+5. Once imported, you will see the "Online Learning Platform" collection in your Postman workspace.
+6. Click on the collection to expand it and view the available requests.
+7. You can now test the API endpoints by sending requests using Postman.
 
 
-## Some test case here with proper Screenshots
+## Some Test Cases with Proper Screenshots
+
+### Testing the `get_courses` Function (GET Method)
+
+1. Send a GET request to the `/courses` endpoint.
+2. Verify that the request is successful and returns the list of courses.
+3. Below is a screenshot of the response:
+
+![Get Courses](./screenshots/get_courses.png)
+
