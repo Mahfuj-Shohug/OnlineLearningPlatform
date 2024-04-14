@@ -169,3 +169,22 @@ Before you begin, ensure you have the following installed on your local machine:
 - Send a POST request to the `/enrollments` endpoint. # Invalid course Id
 
 ![POST enroll_student](./screenshots/enroll_student4.png)
+
+
+### Testing the `validate_enrollment` (POST Method)
+
+- Send a POST request to the `/enrollments/validate` endpoint. # if course not found
+
+![POST validate_enrollment](./screenshots/validate_enrollment.png)
+
+- Send a POST request to the `/enrollments/validate` endpoint. # custom validation
+
+![POST validate_enrollment](./screenshots/validate_enrollment2.png)
+
+- Send a POST request to the `/enrollments/validate` endpoint. # Successfully validate
+
+![POST validate_enrollment](./screenshots/validate_enrollment3.png)
+
+- Send a POST request to the `/enrollments/validate` endpoint. # Invalid enrollemnt 
+
+![POST validate_enrollment](./screenshots/validate_enrollment4.png)
