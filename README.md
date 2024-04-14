@@ -124,3 +124,15 @@ Before you begin, ensure you have the following installed on your local machine:
 - Send a GET request to the `/courses?instructor=instructor 1&price=1300` endpoint.
 
 ![Get Filter Courses](./screenshots/filter_courses5.png)
+
+
+### Testing the `get_course_by_id` (GET Method)
+
+- Send a GET request to the `/courses/5` endpoint.
+
+![Get Filter Courses](./screenshots/get_course_by_id.png)
+
+- Send a GET request to the `/courses/500` endpoint. # Invalid id
+
+![Get Filter Courses](./screenshots/get_course_by_id2.png)
+
