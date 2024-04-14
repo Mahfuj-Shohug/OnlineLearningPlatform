@@ -188,3 +188,19 @@ Before you begin, ensure you have the following installed on your local machine:
 - Send a POST request to the `/enrollments/validate` endpoint. # Invalid enrollemnt 
 
 ![POST validate_enrollment](./screenshots/validate_enrollment4.png)
+
+
+## Build and run the Docker containers: (Optional)
+### Before that please stop the runserver from the cmd
+
+    ```bash
+    docker-compose up --build
+    ```
+
+
+## Developed By
+
+Md. Mahfuj Hasan Shohug  
+Software Engineer (OOP)  
+Contact: shohug.mahfuj@gmail.com  
+Phone: 01786725669
