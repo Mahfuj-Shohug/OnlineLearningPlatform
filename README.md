@@ -103,3 +103,24 @@ Before you begin, ensure you have the following installed on your local machine:
 
 ![Get Courses](./screenshots/get_courses.png)
 
+### Testing the `filter_courses` (GET Method)
+
+- Send a GET request to the `/courses?duration=90` endpoint.
+
+![Get Filter Courses](./screenshots/filter_courses.png)
+
+- Send a GET request to the `/courses?price=150` endpoint.
+
+![Get Filter Courses](./screenshots/filter_courses2.png)
+
+- Send a GET request to the `/courses?instructor=instructor 1` endpoint.
+
+![Get Filter Courses](./screenshots/filter_courses3.png)
+
+- Send a GET request to the `/courses?instructor=instructor 1&price=100` endpoint.
+
+![Get Filter Courses](./screenshots/filter_courses4.png)
+
+- Send a GET request to the `/courses?instructor=instructor 1&price=1300` endpoint.
+
+![Get Filter Courses](./screenshots/filter_courses5.png)
