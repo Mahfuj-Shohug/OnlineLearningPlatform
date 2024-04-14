@@ -24,9 +24,29 @@ def get_courses(request):
     if title:
         queryset = queryset.filter(title__icontains=title)
 
-    serializer = CourseSerializer(queryset, many=True)
+    courses_data = []
+    for course in queryset:
+        course_data = CourseSerializer(course).data
+        enrollment_count = Enrollment.objects.filter(course=course).count()
+        course_data["enrollment_count"] = enrollment_count
+        enrolled_students = Enrollment.objects.filter(course=course)
+        student_names = [enrollment.student_name for enrollment in enrolled_students]
+        course_data["enrolled_students"] = student_names
+        courses_data.append(course_data)
 
-    return Response(serializer.data)
+    if queryset.exists():
+        response_data = {
+            "courses": courses_data,
+            "success": True,
+            "message": "Retrieve data successfully",
+        }
+    else:
+        response_data = {
+            "success": False,
+            "message": "Data is empty",
+        }
+
+    return Response(response_data)
 
 
 @api_view(["POST"])
