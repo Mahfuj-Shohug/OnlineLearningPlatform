@@ -193,9 +193,12 @@ Before you begin, ensure you have the following installed on your local machine:
 ## Build and run the Docker containers: (Optional)
 ### Before that please stop the runserver from the cmd
 
+- Start the docker container server:
+
     ```bash
     docker-compose up --build
     ```
+
 
 
 ## Developed By
